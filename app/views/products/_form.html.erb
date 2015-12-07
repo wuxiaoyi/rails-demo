@@ -1,0 +1,12 @@
+<%= form_for @product do |f|%>
+  <div class="form-group">
+    <label for="exampleInputEmail1">产品名：</label>
+    <%= f.text_field :name %>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">价格：</label>
+    <%= f.text_field :price %>
+  </div>
+  <%= f.submit '提交', class: 'btn btn-default' %>
+
+<% end %>

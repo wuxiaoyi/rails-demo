@@ -1,0 +1,12 @@
+<ul class="list-group">
+  <% @products.each do |product| %>
+    <li class="list-group-item" id="product-<%= product.id %>">
+      产品名：<%= product.name%>
+      价格：<%= product.price %>
+      <%= link_to '删除', product_path(product), :method=> 'delete', :remote=> true, :confirm => '确定删除吗？' %>
+      <%= link_to '编辑', edit_product_path(product) %>
+    </li>
+  <% end %>
+</ul>
+
+<%= will_paginate @products, renderer: BootstrapPagination::Rails %>
