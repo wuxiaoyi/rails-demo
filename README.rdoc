@@ -1,28 +1,8 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+相关命令：
+1.新建rails项目：rails new demo
+2.启动rails服务器：rails s
+3.增加gem后记得bundle install并且重启服务器
+4.创建一个表：rails g migration CreateProducts
+5.跑表的任务：rake db:migrate
+6.查看rails路由：rake routes
+7.跑创建100个product的任务：rake add_product
